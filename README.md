@@ -1,12 +1,8 @@
-# SOC-Detection
+# SOC Detection Lab
 
-## Project Overview
+## Overview
 
-This project demonstrates how to use Wazuh SIEM to detect and investigate security events on a Windows endpoint.
-
-The goal is to simulate common attacks, analyze alerts, and document the investigation process like a SOC Analyst.
-
----
+This project demonstrates how to deploy and use Wazuh SIEM to monitor Windows endpoints, detect security events, and investigate alerts.
 
 ## Lab Environment
 
@@ -17,32 +13,26 @@ The goal is to simulate common attacks, analyze alerts, and document the investi
 - Windows 11 Endpoint
 - VirtualBox
 
----
+## Objectives
 
-## Project Objectives
-
-- Detect failed login attempts
-- Investigate Windows security events
-- Analyze Wazuh alerts
-- Map attacks to the MITRE ATT&CK Framework
-- Write incident reports
-
----
+- Deploy Wazuh SIEM
+- Monitor Windows security events
+- Detect suspicious activity
+- Perform incident investigation
+- Document findings
 
 ## Repository Structure
 
-```
-screenshots/
-attack-simulations/
-incident-reports/
-detections/
-documentation/
-```
-
----
+- screenshots/
+- attack-simulations/
+- incident-reports/
+- detections/
+- documentation/
 
 ## Status
 
-✅ Lab setup completed.
+✅ Wazuh SIEM successfully deployed.
 
-⏳ Attack simulations are in progress.
+✅ Windows agent connected.
+
+⏳ Detection scenarios in progress.
