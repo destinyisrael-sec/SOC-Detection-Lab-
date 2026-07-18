@@ -3,7 +3,21 @@
 ## Overview
 
 This project demonstrates how to deploy and use Wazuh SIEM to monitor Windows endpoints, detect security events, and investigate alerts.
+## Architecture
 
+```text
+Windows 11 Endpoint
+        │
+        │ Wazuh Agent
+        ▼
+Ubuntu 24.04 (Wazuh Manager)
+        │
+        ▼
+Wazuh Indexer
+        │
+        ▼
+Wazuh Dashboard
+```
 ## Lab Environment
 
 - Ubuntu 24.04 LTS
