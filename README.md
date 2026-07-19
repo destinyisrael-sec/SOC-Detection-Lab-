@@ -34,7 +34,18 @@ Wazuh Dashboard
 - Detect suspicious activity
 - Perform incident investigation
 - Document findings
+## Skills Demonstrated
 
+- SIEM Deployment
+- Wazuh Configuration
+- Windows Endpoint Monitoring
+- Windows Event Log Analysis
+- Threat Hunting
+- Alert Triage
+- Incident Investigation
+- Security Monitoring
+- Endpoint Detection
+- Log Analysis
 ## Repository Structure
 
 - screenshots/
