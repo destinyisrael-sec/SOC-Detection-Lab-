@@ -54,10 +54,23 @@ Wazuh Dashboard
 - detections/
 - documentation/
 
-## Status
+## Detection Scenarios
 
-✅ Wazuh SIEM successfully deployed.
+### Detection 1 – Windows Authentication Failure
 
-✅ Windows agent connected.
+- Windows Event ID: **4625**
+- Wazuh successfully collected failed logon events.
+- Alerts were visible in the Wazuh Dashboard.
+- Investigation confirmed multiple failed authentication attempts.
 
-⏳ Detection scenarios in progress.
+### Detection 2 – Successful Logon
+
+- Windows Event ID: **4624**
+- Verified successful Windows authentication events.
+- Confirmed endpoint visibility from the Windows agent.
+
+### Detection 3 – Wazuh Agent Health
+
+- Windows endpoint successfully enrolled.
+- Agent communication verified.
+- Logs successfully forwarded to the manager.
