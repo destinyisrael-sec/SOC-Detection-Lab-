@@ -74,3 +74,12 @@ Wazuh Dashboard
 - Windows endpoint successfully enrolled.
 - Agent communication verified.
 - Logs successfully forwarded to the manager.
+- ## Lessons Learned
+
+- Successfully deployed a complete Wazuh SIEM environment using Ubuntu and Windows 11.
+- Learned how to enroll a Windows endpoint with the Wazuh Manager.
+- Resolved agent version compatibility issues between the manager and Windows agent.
+- Investigated Windows Security Event ID 4625 (failed logon) using the Wazuh Dashboard.
+- Learned how to search and filter security events using Wazuh queries.
+- Practiced troubleshooting Wazuh services, agent enrollment, and configuration issues.
+- Improved documentation and GitHub project organization for a professional cybersecurity portfolio.
