@@ -46,6 +46,22 @@ Wazuh Dashboard
 - Security Monitoring
 - Endpoint Detection
 - Log Analysis
+- SIEM Deployment
+- Windows Log Analysis
+- Threat Detection
+- Incident Investigation
+- Endpoint Monitoring
+- Linux Administration
+- Windows Event Log Analysis
+- GitHub Documentation
+- ## Tools Used
+
+- Wazuh SIEM
+- Windows 11
+- Ubuntu 24.04
+- VirtualBox
+- Git
+- GitHub
 ## Repository Structure
 
 - screenshots/
