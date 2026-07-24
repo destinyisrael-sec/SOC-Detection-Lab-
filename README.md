@@ -84,7 +84,7 @@ Wazuh Dashboard
 - Discovery activity detection
 - Suspicious executable creation
   
-- ✔ Windows Authentication Monitoring
+✔ Windows Authentication Monitoring
 
 ✔ Sysmon Process Monitoring
 
@@ -93,6 +93,10 @@ Wazuh Dashboard
 ✔ Account Enumeration Detection
 
 ✔ Process Creation Monitoring
+
+✅ Encoded PowerShell Detection
+
+✅ Executable File Drop Detection
 
 - ## Lessons Learned
   
