@@ -3,6 +3,7 @@
 ## Overview
 
 This project demonstrates how to deploy and use Wazuh SIEM to monitor Windows endpoints, detect security events, and investigate alerts.
+
 ## Architecture
 
 ```text
@@ -34,6 +35,7 @@ Wazuh Dashboard
 - Detect suspicious activity
 - Perform incident investigation
 - Document findings
+
 ## Skills Demonstrated
 
 - SIEM Deployment
@@ -54,6 +56,7 @@ Wazuh Dashboard
 - Linux Administration
 - Windows Event Log Analysis
 - GitHub Documentation
+  
 - ## Tools Used
 
 - Wazuh SIEM
@@ -62,6 +65,7 @@ Wazuh Dashboard
 - VirtualBox
 - Git
 - GitHub
+  
 ## Repository Structure
 
 - screenshots/
@@ -79,8 +83,19 @@ Wazuh Dashboard
 - PowerShell LOLBin detection
 - Discovery activity detection
 - Suspicious executable creation
-- ## Lessons Learned
+  
+- ✔ Windows Authentication Monitoring
 
+✔ Sysmon Process Monitoring
+
+✔ PowerShell Discovery Detection
+
+✔ Account Enumeration Detection
+
+✔ Process Creation Monitoring
+
+- ## Lessons Learned
+  
 - Successfully deployed a complete Wazuh SIEM environment using Ubuntu and Windows 11.
 - Learned how to enroll a Windows endpoint with the Wazuh Manager.
 - Resolved agent version compatibility issues between the manager and Windows agent.
