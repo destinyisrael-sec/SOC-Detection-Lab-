@@ -83,7 +83,7 @@ Wazuh Dashboard
 - PowerShell LOLBin detection
 - Discovery activity detection
 - Suspicious executable creation
-  
+- Base64 Encoded PowerShell Detection (Rule 92057)
 ✔ Windows Authentication Monitoring
 
 ✔ Sysmon Process Monitoring
@@ -107,3 +107,7 @@ Wazuh Dashboard
 - Learned how to search and filter security events using Wazuh queries.
 - Practiced troubleshooting Wazuh services, agent enrollment, and configuration issues.
 - Improved documentation and GitHub project organization for a professional cybersecurity portfolio.
+- Configured Sysmon telemetry for PowerShell monitoring.
+- Investigated Base64 encoded PowerShell execution.
+- Validated Wazuh detection Rule 92057.
+- Mapped detections to MITRE ATT&CK T1059.001.
