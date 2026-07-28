@@ -14,3 +14,8 @@ Threat Hunting showing Rule ID 92057.
 Detailed Wazuh rule information for Rule 92057.# Screenshots
 
 This folder contains screenshots of the Wazuh SIEM dashboard, alerts, investigations, and lab setup.
+
+## Registry Persistence Activity
+
+- registry-alert-list.png
+- registry-rule-details.png
