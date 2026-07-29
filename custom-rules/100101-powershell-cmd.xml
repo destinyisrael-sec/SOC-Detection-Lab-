@@ -1,0 +1,9 @@
+<rule id="100101" level="10">
+  <if_group>sysmon_event1</if_group>
+  <field name="win.eventdata.parentImage" type="pcre2">(?i)powershell\.exe</field>
+  <field name="win.eventdata.image" type="pcre2">(?i)cmd\.exe</field>
+  <description>Custom Detection: PowerShell launched CMD</description>
+  <mitre>
+    <id>T1059.001</id>
+  </mitre>
+</rule>
