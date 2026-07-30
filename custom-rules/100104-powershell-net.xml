@@ -1,0 +1,19 @@
+<rule id="100104" level="12">
+  <if_sid>61603</if_sid>
+
+  <field name="win.eventdata.parentImage" type="pcre2">(?i)powershell\.exe</field>
+
+  <field name="win.eventdata.image" type="pcre2">(?i)\\net\.exe$</field>
+
+  <description>Custom Detection: PowerShell launched NET.EXE</description>
+
+  <mitre>
+    <id>T1087</id>
+  </mitre>
+
+  <group>
+    attack.execution,
+    custom_detection,
+  </group>
+
+</rule>
