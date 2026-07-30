@@ -1,0 +1,19 @@
+<rule id="100102" level="12">
+  <if_group>sysmon_event1</if_group>
+
+  <field name="win.eventdata.parentImage" type="pcre2">(?i)powershell\.exe</field>
+
+  <field name="win.eventdata.image" type="pcre2">(?i)wscript\.exe</field>
+
+  <description>Custom Detection: PowerShell launched WScript</description>
+
+  <mitre>
+    <id>T1059.001</id>
+  </mitre>
+
+  <group>
+    custom_detection,
+    attack.execution,
+    detection_engineering
+  </group>
+</rule>
