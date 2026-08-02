@@ -1,113 +1,218 @@
-# SOC Detection Lab
+# SOC Detection Engineering Lab
 
-## Overview
+> A hands-on Security Operations Center (SOC) portfolio focused on Detection Engineering, Threat Hunting, Incident Response, and Endpoint Monitoring using **Wazuh**, **Sysmon**, **Windows**, and **Ubuntu Linux**.
 
-This project demonstrates how to deploy and use Wazuh SIEM to monitor Windows endpoints, detect security events, and investigate alerts.
+---
 
-## Architecture
+# Lab Overview
 
-```text
-Windows 11 Endpoint
-        │
-        │ Wazuh Agent
-        ▼
-Ubuntu 24.04 (Wazuh Manager)
-        │
-        ▼
-Wazuh Indexer
-        │
-        ▼
+This repository demonstrates practical SOC analyst and Detection Engineering skills through real attack simulations, custom Wazuh detection rules, incident investigations, and threat hunting exercises.
+
+The objective of this lab is to simulate realistic attacker behavior, validate endpoint telemetry, build custom detections, and document the investigation process from initial detection through incident response.
+
+---
+
+# Lab Architecture
+
+Windows Endpoint
+
+↓
+
+Microsoft Sysmon
+
+↓
+
+Wazuh Agent
+
+↓
+
+Wazuh Manager (Ubuntu)
+
+↓
+
 Wazuh Dashboard
-```
-## Lab Environment
 
-- Ubuntu 24.04 LTS
-- Wazuh Manager 4.9.2
-- Wazuh Dashboard
-- Wazuh Indexer
-- Windows 11 Endpoint
-- VirtualBox
+↓
 
-## Objectives
+Threat Hunting & Incident Response
 
-- Deploy Wazuh SIEM
-- Monitor Windows security events
-- Detect suspicious activity
-- Perform incident investigation
-- Document findings
+---
 
-## Skills Demonstrated
-
-- SIEM Deployment
-- Wazuh Configuration
-- Windows Endpoint Monitoring
-- Windows Event Log Analysis
-- Threat Hunting
-- Alert Triage
-- Incident Investigation
-- Security Monitoring
-- Endpoint Detection
-- Log Analysis
-- SIEM Deployment
-- Windows Log Analysis
-- Threat Detection
-- Incident Investigation
-- Endpoint Monitoring
-- Linux Administration
-- Windows Event Log Analysis
-- GitHub Documentation
-  
-- ## Tools Used
+# Technologies Used
 
 - Wazuh SIEM
+- Microsoft Sysmon
 - Windows 11
-- Ubuntu 24.04
-- VirtualBox
-- Git
-- GitHub
-  
-## Repository Structure
+- Ubuntu Linux
+- PowerShell
+- XML
+- Git & GitHub
 
-- screenshots/
-- attack-simulations/
-- incident-reports/
-- detections/
-- documentation/
+---
 
-## Detection Scenarios
+# Skills Demonstrated
 
-- Windows failed authentication
-- Windows successful authentication
-- PowerShell spawning CMD
-- Account Discovery (net.exe)
-- PowerShell LOLBin detection
-- Discovery activity detection
-- Suspicious executable creation
-- Base64 Encoded PowerShell Detection (Rule 92057)
-✔ Windows Authentication Monitoring
+- Detection Engineering
+- Threat Hunting
+- Incident Response
+- Endpoint Monitoring
+- SIEM Analysis
+- Windows Event Investigation
+- Microsoft Sysmon
+- PowerShell Analysis
+- MITRE ATT&CK Mapping
+- Custom Wazuh Rule Development
 
-✔ Sysmon Process Monitoring
+---
 
-✔ PowerShell Discovery Detection
+# Repository Structure
 
-✔ Account Enumeration Detection
+```text
+attack-simulations/
+```
 
-✔ Process Creation Monitoring
+Attack simulations used to generate endpoint telemetry.
 
-✅ Encoded PowerShell Detection
+```text
+custom-rules/
+```
 
-✅ Executable File Drop Detection
+Custom Wazuh XML detection rules.
 
-- ## Lessons Learned
-  
-- Successfully deployed a complete Wazuh SIEM environment using Ubuntu and Windows 11.
-- Learned how to enroll a Windows endpoint with the Wazuh Manager.
-- Resolved agent version compatibility issues between the manager and Windows agent.
-- Investigated Windows Security Event ID 4625 (failed logon) using the Wazuh Dashboard.
-- Learned how to search and filter security events using Wazuh queries.
-- Practiced troubleshooting Wazuh services, agent enrollment, and configuration issues.
-- Improved documentation and GitHub project organization for a professional cybersecurity portfolio.
-- Configured Sysmon telemetry for PowerShell monitoring.
-- Investigated Base64 encoded PowerShell execution.
-- Validated Wazuh detection Rule 92057.
-- Mapped detections to MITRE ATT&CK T1059.001.
+```text
+detections/
+```
+
+Detection engineering documentation.
+
+```text
+incident-reports/
+```
+
+Professional incident investigation reports.
+
+```text
+threat-hunting/
+```
+
+Threat hunting playbooks and investigations.
+
+```text
+documentation/
+```
+
+Lab setup, installation notes and troubleshooting.
+
+```text
+screenshots/
+```
+
+Evidence collected from Wazuh and Sysmon.
+
+---
+
+# Detection Engineering
+
+Custom Wazuh detection rules created during this lab:
+
+- PowerShell → Notepad
+- PowerShell → CMD
+- PowerShell → WScript
+- PowerShell → REG
+- PowerShell → NET
+- PowerShell → Certutil
+- PowerShell → Bitsadmin
+- PowerShell → Rundll32
+- PowerShell → MSHTA
+- PowerShell → PsExec
+
+---
+
+# Attack Simulations
+
+Attack simulations include:
+
+- Failed Authentication
+- Successful Authentication
+- PowerShell Discovery
+- Base64 Encoded PowerShell
+- Registry Persistence
+- LOLBin Execution
+- Account Discovery
+- Process Creation
+
+---
+
+# Threat Hunting
+
+Threat hunting exercises performed include:
+
+- PowerShell Activity Hunting
+- Account Discovery Hunting
+- Authentication Hunting
+- Process Creation Hunting
+
+---
+
+# Incident Response
+
+Documented incident investigations include:
+
+- Failed Authentication
+- PowerShell Discovery
+- Encoded PowerShell
+- Suspicious PowerShell Activity
+- Registry Persistence
+- Custom Detection Engineering Alerts
+- Windows LOLBin Detection
+- Process Creation Investigation
+
+---
+
+# MITRE ATT&CK Coverage
+
+Techniques covered include:
+
+- T1059.001 – PowerShell
+- T1087 – Account Discovery
+- T1112 – Modify Registry
+- T1105 – Ingress Tool Transfer
+- T1021.002 – SMB / Windows Admin Shares
+
+---
+
+# Sample Screenshots
+
+Repository includes evidence such as:
+
+- Wazuh Alert Dashboard
+- Custom Detection Alerts
+- Rule Details
+- Sysmon Process Creation Events
+- Threat Hunting Queries
+- Lab Architecture
+
+---
+
+# Future Improvements
+
+Planned additions include:
+
+- Sigma Rule Development
+- YARA Rule Development
+- Splunk Detection Engineering
+- Elastic SIEM Detection Engineering
+- Malware Analysis
+- Atomic Red Team Simulations
+- ATT&CK Navigator Mapping
+
+---
+
+# Author
+
+**Destiny Israel**
+
+SOC Analyst | Detection Engineering | Threat Hunting | Incident Response
+
+GitHub:
+https://github.com/destinyisrael-sec
